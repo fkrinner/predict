@@ -1,0 +1,196 @@
+C The following waves were desiobarred:
+C
+ TPRIME_LIM    0.1  1.0
+ TDIST_TYPE   1  
+ M_BEAM 0.13975
+ MCSPREAD
+ NMCDIAG  10000
+ NREFL  1
+ M_TARGET  0.93827231
+ M_RECOIL  0.93827231
+ IBINNEDDST    1
+ TYPE_TREE_PH_IN 2
+ *PH_BINS_SUFFIX   '.root'
+ *SORTMASSBINS 0.0 2.5 0.0 0.0 0.010
+C
+ IS_TRIGGERED 1
+ IS_IN_TARGET 1
+ IS_EXCLUSIVE 1
+ IS_IN_T 1
+ CENTRAL_PROD_VETO -1
+ IS_IN_BEAM_TIME 1
+ RICH_VETO -1
+ CEDAR_VETO -1
+ IS_IN_DELTA_PHI 0
+ CORRECT_NBR_RPD_TRACKS 1
+ IS_PLANAR 0
+ IS_PLANAR_EXTENDED 1
+C
+ SEL_PRED_WAVES 1
+ EBEAM_TYPE  1
+ AX0 -0.000039877
+ D_AX 0.00012166
+ AY0 -0.00020365
+ D_AY 0.00012558
+ JMAX 6
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCADDWAVECCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+  *OPEN70                'addwave_isobarred.dat'
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+ READ    70
+ STEP_PIPI_S
+ SETRHO 1. 1. 1. 1.
+ JFIX 1 1 1 1
+C
+C
+*BLOCKRANK   1
+*IWAVENAM 'FLAT                                                        '
+*BLOCKEND
+C
+*BLOCKRANK   1
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCDEISOBARREDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+C
+C****************** 0-+ *****************5
+*IWAVENAM '1-(0-+)0+ (pipi)_S pi S                                     '    0     0     1
+*IWAVENAM '1-(0-+)0+ f0(980) pi S                                      '    0     0     1   1.20
+*IWAVENAM '1-(0-+)0+ rho pi P                                          '    0     0     1
+*IWAVENAM '1-(0-+)0+ f0(1500) pi S                                     '    0     0     1   1.70 
+*IWAVENAM '1-(0-+)0+ f2 pi D                                           '    0     0     0
+C****************************************5
+C
+C***************** 1++ ******************13
+*IWAVENAM '1-(1++)0+ rho pi S                                          '    0     0     0
+*IWAVENAM '1-(1++)1+ rho pi S                                          '    0     0     1 
+*IWAVENAM '1-(1++)0+ rho pi D                                          '    0     0     0   0.0
+*IWAVENAM '1-(1++)1+ rho pi D                                          '    0     0     0   0.0
+*IWAVENAM '1-(1++)0+ (pipi)_S pi P                                     '    0     0     1   0.0
+*IWAVENAM '1-(1++)1+ (pipi)_S pi P                                     '    0     0     0   1.1
+*IWAVENAM '1-(1++)0+ f2 pi P                                           '    0     0     0   1.22
+*IWAVENAM '1-(1++)1+ f2 pi P                                           '    0     0     0   0.0
+*IWAVENAM '1-(1++)0+ f2 pi F                                           '    0     0     0 
+*IWAVENAM '1-(1++)0+ f0(980) pi P                                      '    0     0     1   1.18
+*IWAVENAM '1-(1++)1+ f0(980) pi P                                      '    0     0     0   1.14
+*IWAVENAM '1-(1++)0+ rho3 pi D                                         '    0     0     0   0.0
+*IWAVENAM '1-(1++)0+ rho3 pi G                                         '    0     0     0   0.0
+C***************************************13
+C
+C*************** 1-+ *******************1
+*IWAVENAM '1-(1-+)1+ rho pi P                                          '    0     0     0 
+C***************************************1
+C
+C************** 2++ ********************5
+*IWAVENAM '1-(2++)1+ rho pi D                                          '    0     0     1 
+*IWAVENAM '1-(2++)2+ rho pi D                                          '    0     0     0 
+*IWAVENAM '1-(2++)1+ f2 pi P                                           '    0     0     0   1.0
+*IWAVENAM '1-(2++)2+ f2 pi P                                           '    0     0     0   1.4
+*IWAVENAM '1-(2++)1+ rho3 pi D                                         '    0     0     0   0.8
+C***************************************5
+C
+C************* 2-+ *********************17
+*IWAVENAM '1-(2-+)0+ f2 pi S                                           '    0     0     0 
+*IWAVENAM '1-(2-+)1+ f2 pi S                                           '    0     0     0   1.1
+*IWAVENAM '1-(2-+)2+ f2 pi S                                           '    0     0     0   0.0
+*IWAVENAM '1-(2-+)0+ f2 pi D                                           '    0     0     0 
+*IWAVENAM '1-(2-+)1+ f2 pi D                                           '    0     0     0 
+*IWAVENAM '1-(2-+)2+ f2 pi D                                           '    0     0     0 
+*IWAVENAM '1-(2-+)0+ f2 pi G                                           '    0     0     0 
+*IWAVENAM '1-(2-+)0+ rho pi P                                          '    0     0     1 
+*IWAVENAM '1-(2-+)1+ rho pi P                                          '    0     0     1 
+*IWAVENAM '1-(2-+)2+ rho pi P                                          '    0     0     0 
+*IWAVENAM '1-(2-+)0+ rho pi F                                          '    0     0     0 
+*IWAVENAM '1-(2-+)1+ rho pi F                                          '    0     0     0 
+*IWAVENAM '1-(2-+)0+ rho3 pi P                                         '    0     0     0   1.0
+*IWAVENAM '1-(2-+)1+ rho3 pi P                                         '    0     0     0   1.30
+*IWAVENAM '1-(2-+)0+ (pipi)_S pi D                                     '    0     0     1 
+*IWAVENAM '1-(2-+)1+ (pipi)_S pi D                                     '    0     0     0 
+*IWAVENAM '1-(2-+)0+ f0(980) pi D                                      '    0     0     1   1.16
+C**************************************************17
+C
+C********************** 3-+ ***********************2
+*IWAVENAM '1-(3-+)1+ rho pi F                                          '    0     0     0
+*IWAVENAM '1-(3-+)1+ f2 pi D                                           '    0     0     0   1.34
+C**************************************************2
+C
+C********************* 3++ ************************11
+*IWAVENAM '1-(3++)0+ rho pi D                                          '    0     0     0
+*IWAVENAM '1-(3++)1+ rho pi D                                          '    0     0     0
+*IWAVENAM '1-(3++)0+ rho pi G                                          '    0     0     0
+*IWAVENAM '1-(3++)1+ rho pi G                                          '    0     0     0
+*IWAVENAM '1-(3++)0+ f2 pi P                                           '    0     0     0   0.96
+*IWAVENAM '1-(3++)1+ f2 pi P                                           '    0     0     0   1.14
+*IWAVENAM '1-(3++)0+ rho3 pi S                                         '    0     0     0   1.38
+*IWAVENAM '1-(3++)1+ rho3 pi S                                         '    0     0     0   1.38
+*IWAVENAM '1-(3++)0+ rho3 pi 6                                         '    0     0     0
+*IWAVENAM '1-(3++)0+ (pipi)_S pi F                                     '    0     0     0
+*IWAVENAM '1-(3++)1+ (pipi)_S pi F                                     '    0     0     0
+C******************************************11
+C
+C******************* 4-+ ******************6
+*IWAVENAM '1-(4-+)0+ rho pi F                                          '    0     0     0
+*IWAVENAM '1-(4-+)1+ rho pi F                                          '    0     0     0
+*IWAVENAM '1-(4-+)0+ f2 pi D                                           '    0     0     0
+*IWAVENAM '1-(4-+)0+ f2 pi G                                           '    0     0     0   1.6
+*IWAVENAM '1-(4-+)0+ (pipi)_S pi G                                     '    0     0     0   1.4
+*IWAVENAM '1-(4-+)1+ f2 pi D                                           '
+C******************************************6
+C
+C******************************************5
+*IWAVENAM '1-(4++)1+ rho pi G                                          '    0     0     0
+*IWAVENAM '1-(4++)2+ rho pi G                                          '    0     0     0
+*IWAVENAM '1-(4++)1+ rho3 pi D                                         '    0     0     0   1.7
+*IWAVENAM '1-(4++)1+ f2 pi F                                           '    0     0     0
+*IWAVENAM '1-(4++)2+ f2 pi F                                           '    0     0     0
+C*******************************************5
+C
+C******************* 5++ *******************7
+*IWAVENAM '1-(5++)0+ rho pi G                                          '    0     0     0
+*IWAVENAM '1-(5++)0+ rho3 pi D                                         '    0     0     0   1.36
+*IWAVENAM '1-(5++)1+ (pipi)_S pi H                                     '    0     0     0
+*IWAVENAM '1-(5++)0+ (pipi)_S pi H                                     '    0     0     0
+*IWAVENAM '1-(5++)0+ f2 pi F                                           '    0     0     0   0.98
+*IWAVENAM '1-(5++)0+ f2 pi H                                           '    0     0     0
+*IWAVENAM '1-(5++)1+ f2 pi F                                           '    0     0     0
+C*******************************************7
+C
+C******************* 6-+ *******************6
+*IWAVENAM '1-(6-+)0+ (pipi)_S pi 6                                     '    0     0     0
+*IWAVENAM '1-(6-+)1+ (pipi)_S pi 6                                     '    0     0     0
+*IWAVENAM '1-(6-+)0+ rho pi H                                          '    0     0     0
+*IWAVENAM '1-(6-+)1+ rho pi H                                          '    0     0     0
+*IWAVENAM '1-(6-+)0+ rho3 pi F                                         '    0     0     0
+*IWAVENAM '1-(6-+)0+ f2 pi G                                           '    0     0     0
+C********************************************6
+C
+C********************************************2
+*IWAVENAM '1-(6++)1+ rho pi 6                                          '    0     0     0
+*IWAVENAM '1-(6++)1+ f2 pi H                                           '    0     0     0
+C********************************************2
+C
+C
+C
+*BLOCKEND
+C
+*BLOCKRANK   2
+*IWAVENAM '1-(1-+)0- rho pi P                                          '    0     0     0
+*IWAVENAM '1-(1-+)1- rho pi P                                          '    0     0     0
+C
+*IWAVENAM '1-(1++)1- rho pi S                                          '    0     0     0
+C
+*IWAVENAM '1-(2++)0- rho pi D                                          '    0     0     0
+*IWAVENAM '1-(2++)0- f2 pi P                                           '    0     0     0   1.18
+*IWAVENAM '1-(2++)1- f2 pi P                                           '    0     0     0   1.3
+C
+*IWAVENAM '1-(2-+)1- f2 pi S                                           '    0     0     0
+*BLOCKEND
+C
+C
+ TYPE_EPS  1
+ TYPE_RHO  1
+ TYPE_RHO3 1
+ TYPE_F0_980 2
+C 
+ FILE_HIST_PAW_DISTRIB 'distrib_2008_W37_acc_53waves_tdep.dat'
+ FILE_HIST_ROOT_DISTRIB 'distrib_2008_W37_acc_53waves_tdep.root'
+C
+  FIT_TEXT_OUTPUT 1
+  COMPENSATE_AMP    0
